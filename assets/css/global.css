@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Global Font === */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8FAFC;
+    color: #1F2937; /* Tailwind gray-800 */
+}
+
+/* === Navigation Links === */
+.nav-link {
+    @apply text-gray-700 hover:text-blue-600 text-base font-medium leading-[35px];
+}
+
+/* === Mobile Navigation Links === */
+.mobile-link {
+    @apply block py-2 text-base font-medium text-gray-700 hover:text-blue-600;
+}
+
+/* === Button Base === */
+.btn {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-2 text-base font-medium leading-tight tracking-wide transition duration-200 ease-in-out;
+}
+
+/* === Button Variants === */
+.btn-primary {
+    @apply bg-[#176FFF] text-white border border-[#176FFF] hover:bg-[#0f5be0];
+}
+
+.btn-outline {
+    @apply bg-white text-black border border-black hover:bg-gray-100;
+}
+
+/* === List items === */
+.list-item {
+    @apply flex items-start gap-3 text-sm font-medium leading-[22px];
+}
+
+/* === Icon styling === */
+.text-icon {
+    @apply text-gray-500 text-base pt-[2px];
+}

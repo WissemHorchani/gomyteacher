@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoMyTeacher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F8FAFC] text-gray-800">
+<!-- HEADER -->
+<div class="flex justify-center mt-4">
+    <header class="text-[16px] flex items-center justify-between px-8 w-[1304px] h-[72px] bg-white rounded-[46.5px]">
+    <!-- Logo -->
+        <img src="./assets/images/logo.png" alt="GoMyTeacher Logo" class="w-[203.83px] h-[16.6px]" />
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex space-x-6 lg:space-x-8">
+            <a href="#" class="text-gray-700 hover:text-blue-600 text-[16px] font-medium leading-[35px] tracking-[0px]">Features</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600 text-[16px] font-medium leading-[35px] tracking-[0px]">Benefits</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600 text-[16px] font-medium leading-[35px] tracking-[0px]">Testimonials</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600 text-[16px] font-medium leading-[35px] tracking-[0px]">Pricing</a>
+        </nav>
+
+        <!-- Book a demo (always visible) -->
+        <a href="#"
+           class="hidden sm:flex w-[166px] h-[47px] rounded-full bg-[#176FFF] text-white border border-[#176FFF]
+                text-[16px] font-medium leading-[26px] tracking-[0.46px] px-[22px] py-[8px]
+                text-center items-center justify-center hover:bg-[#0f5be0] transition">
+            Book A Demo
+        </a>
+
+        <!-- Hamburger button -->
+        <button id="menuToggle" class="md:hidden text-gray-700 text-2xl focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Mobile nav menu (hidden by default) -->
+        <div id="mobileMenu" class="absolute top-[80px] left-0 w-full bg-white rounded-b-xl hidden flex-col px-6 py-4 z-10">
+            <a href="#" class="block py-2 text-[16px] font-medium text-gray-700 hover:text-blue-600">Features</a>
+            <a href="#" class="block py-2 text-[16px] font-medium text-gray-700 hover:text-blue-600">Benefits</a>
+            <a href="#" class="block py-2 text-[16px] font-medium text-gray-700 hover:text-blue-600">Testimonials</a>
+            <a href="#" class="block py-2 text-[16px] font-medium text-gray-700 hover:text-blue-600">Pricing</a>
+            <a href="#"
+               class="w-full mt-4 rounded-full bg-[#176FFF] text-white border border-[#176FFF]
+                  text-[16px] font-medium leading-[26px] tracking-[0.46px] px-[22px] py-[10px]
+                  text-center flex items-center justify-center hover:bg-[#0f5be0] transition">
+                Book A Demo
+            </a>
+        </div>
+    </header>
+</div>
+
+<!-- SECTION -->
+<section class="w-full max-w-[1304px] mx-auto mt-6 bg-white rounded-[35px]
+flex flex-col lg:flex-row items-center justify-between
+px-4 sm:px-6 lg:px-[11px] pt-[47px] pb-[47px] lg:pt-[9px] lg:pb-[9px]">
+
+    <!-- LEFT -->
+    <div class="w-full lg:w-1/2 max-w-xl space-y-4 pl-0 lg:pl-[75px]">
+        <h1 class="text-[clamp(24px,5vw,30px)] font-bold leading-[clamp(32px,6vw,40px)] text-gray-900">
+            Powering Educators. Supporting<br />
+            Students. Scaling Impact
+        </h1>
+        <p class="text-[clamp(16px,4vw,18px)] font-medium leading-[clamp(26px,5vw,32px)] text-gray-600">
+            Bringing AI-powered grading, personalized feedback, and content creation to educators.
+        </p>
+
+        <ul class="space-y-2">
+            <li class="flex items-start gap-3 text-[14px] font-medium leading-[22px]">
+                <i class="fa-solid fa-check text-gray-500 text-[16px] pt-[2px]"></i>
+                Reduce grading time by 90%
+            </li>
+            <li class="flex items-start gap-3 text-[14px] font-medium leading-[22px]">
+                <i class="fa-solid fa-check text-gray-500 text-[16px] pt-[2px]"></i>
+                Provide instant, AI-generated feedback
+            </li>
+            <li class="flex items-start gap-3 text-[14px] font-medium leading-[22px]">
+                <i class="fa-solid fa-check text-gray-500 text-[16px] pt-[2px]"></i>
+                Create engaging, adaptive learning content
+            </li>
+        </ul>
+
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 pt-6">
+            <a href="#"
+               class="w-full sm:w-[202px] h-[50px] rounded-full bg-white text-black border border-black
+           text-[16px] font-medium leading-[26px] tracking-[0.46px] px-[22px] py-[8px]
+           text-center flex items-center justify-center hover:bg-gray-100 transition">
+                Learn More
+            </a>
+
+            <a href="#"
+               class="w-full sm:w-[202px] h-[50px] rounded-full bg-[#176FFF] text-white
+           text-[16px] font-medium leading-[26px] tracking-[0.46px] px-[22px] py-[8px]
+           text-center flex items-center justify-center hover:bg-[#0f5be0] transition">
+                Book A Demo
+            </a>
+        </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="w-full lg:w-[589px] mt-6 lg:mt-0">
+        <img
+                src="./assets/images/image1.jpg"
+                alt="Feedback Card"
+                class="w-full h-auto max-h-[483px] object-cover rounded-[20px]"
+        />
+    </div>
+</section>
+
+<!-- JS for toggle -->
+<script>
+    const toggle = document.getElementById("menuToggle");
+    const menu = document.getElementById("mobileMenu");
+
+    toggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+</script>
+</body>
+</html>
